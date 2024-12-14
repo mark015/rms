@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2024 at 07:03 AM
+-- Generation Time: Dec 14, 2024 at 01:57 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -67,9 +67,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `role`) VALUES
-(1, 'Mark Balinario', 'admin', '8d4db54daf7d67db5f3c96e43f61c609', 'Admin'),
-(2, 'mark', 'mbdev', '464da487a0286c0b7c1f00e5ed3de7d1', 'User1'),
-(3, 'user2', 'user2', '464da487a0286c0b7c1f00e5ed3de7d1', 'User2');
+(1, 'admin', 'admin', '464da487a0286c0b7c1f00e5ed3de7d1', 'Admin'),
+(2, 'user1', 'user1', '473c96b98e2f77d32eb4fe44a5dcf4b5', 'User1'),
+(3, 'user2', 'user2', '473c96b98e2f77d32eb4fe44a5dcf4b5', 'User2');
 
 --
 -- Indexes for dumped tables
@@ -95,7 +95,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `document`
 --
 ALTER TABLE `document`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
