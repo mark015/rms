@@ -3,7 +3,11 @@
 $(document).ready(function () {
     let currentPage = 1;
     var role = "<?php echo $rowUser['role'];?>";    
+    if(role === 'Admin'){
+        $('#addBtn').html('<button class="btn btn-primary" id="addBtns" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fa fa-plus"></i></button>')
     
+    }
+                    
     // Function to fetch and display data
     function fetchDocuments(page = 1, search = "") {
         
@@ -17,7 +21,6 @@ $(document).ready(function () {
                 let rows = "";
                 response.data.forEach(function (doc) {
                     if(role === 'Admin'){
-                        $('#addBtn').html('<button class="btn btn-primary" id="addBtns" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fa fa-plus"></i></button>')
                         var deleteBtn =  `<button class="btn btn-danger btn-sm delete-btn" data-id="${doc.id}">Delete</button>`
                     }else {
                         var deleteBtn = '';
