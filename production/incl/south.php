@@ -17,6 +17,8 @@
     }else if($link == "documents"){
       include 'script/documents.php'; 
 
+    }else if($link == "user"){
+      include 'script/user.php'; 
     }
   ?>
   </body>

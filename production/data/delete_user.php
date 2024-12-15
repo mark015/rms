@@ -14,13 +14,13 @@ try {
     $documentId = (int)$_POST['id']; // Ensure ID is sanitized as an integer
 
     // Prepare the SQL query to delete the document
-    $query = "DELETE FROM document WHERE id = ?";
+    $query = "DELETE FROM users WHERE id = ?";
     $stmt = $conn->prepare($query);
 
     // Execute the query
     if ($stmt->execute([$documentId])) {
         // If deletion is successful, return a success response
-        echo json_encode(['status' => 'success', 'message' => 'Document deleted successfully.']);
+        echo json_encode(['status' => 'success', 'message' => 'User deleted successfully.']);
     } else {
         // If deletion fails, throw an exception
         throw new RuntimeException('Failed to delete the document.');

@@ -10,6 +10,7 @@
           "dashboard" => "controller/dashboard.php",
           "profile" => "controller/profile.php",
           "documents" => "controller/documents.php",
+          "user" => "controller/user.php",
       ];
       // Assume $rowUser is already defined and populated correctly
       // echo $rowUser['role']; // Consider commenting this out in production
